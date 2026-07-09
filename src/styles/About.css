@@ -1,0 +1,78 @@
+.about-container {
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.about-card {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+.about-subtitle {
+  color: #777;
+  font-size: 1rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.about-section {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.about-section h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f4c542;
+  padding-bottom: 6px;
+}
+
+.tech-list,
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list li {
+  background: #fff3d6;
+  color: #b8860b;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.team-list li {
+  background: #f7f1d1;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    padding: 16px;
+  }
+
+  .about-card {
+    padding: 18px;
+    margin: 12px auto;
+    border-radius: 10px;
+  }
+}

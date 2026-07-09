@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+Tube-Recipe-Book/
+Tube-Recipe-Book-BACKUP/
+components/
+components.code-workspace
+.vercel

@@ -1,0 +1,171 @@
+.menu {
+  background: #FFFDF5;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.menu h1 {
+  text-align: center;
+  color:#333;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 10px;
+}
+
+.filter-btn {
+  background: white;
+  border: 1px solid #ddd;
+  color: #555;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #FFF3D6;
+}
+
+.filter-btn.active {
+  background: #F4C542;
+  color: white;
+  border-color: #F4C542;
+  font-weight: 600;
+}
+
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.drink-grid > * {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.drink-grid > *:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.drink-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0;
+}
+
+.drink-grid h3 {
+  margin: 12px 10px 4px;
+  font-size: 1.05rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.drink-grid p {
+  margin: 0 10px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999;
+  padding: 40px 0;
+  font-style: italic;
+}
+.ingredient-filter {
+  max-width: 650px;
+  margin: 20px auto 0;
+}
+
+.ingredient-filter input {
+  width: 100%;
+  padding: 15px 22px;
+  border: 2px solid #e7c94f;
+  border-radius: 30px;
+  font-size: 17px;
+  outline: none;
+  background: white;
+}
+
+.ingredient-filter input:focus {
+  box-shadow: 0 0 0 4px rgba(231, 201, 79, 0.2);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 24px;
+  }
+
+  .menu h1 {
+    font-size: 30px;
+  }
+
+  .drink-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 16px;
+  }
+
+  .menu h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .drink-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .drink-grid img {
+    height: 120px;
+  }
+
+  .ingredient-filter input {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+}

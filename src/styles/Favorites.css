@@ -1,0 +1,228 @@
+.favorites-page {
+  min-height: 70vh;
+  padding: 60px 20px;
+  background: #fffdf5;
+  text-align: center;
+}
+
+.favorites-box {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.favorites-box h1,
+.favorites-header h1 {
+  font-size: 44px;
+  margin-bottom: 35px;
+  color: #111;
+}
+
+.favorites-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* Empty favorite card */
+.favorites-card,
+.favorites-empty-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 45px 35px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.heart-icon {
+  font-size: 60px;
+  color: #d47037;
+  margin-bottom: 10px;
+}
+
+.favorites-card h2,
+.favorites-empty-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.favorites-card p,
+.favorites-empty-card p {
+  font-size: 17px;
+  color: #444;
+  max-width: 430px;
+  margin: 0 auto 25px;
+  line-height: 1.5;
+}
+
+.explore-btn,
+.menu-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover,
+.menu-btn:hover {
+  background: #d4af37;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+/* Saved favorite drinks */
+.favorites-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.favorite-drink-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.favorite-drink-card:hover {
+  transform: translateY(-6px);
+}
+
+.favorite-drink-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.favorite-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.favorite-info h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.favorite-info p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.favorite-info .details-btn {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.favorite-info .details-btn:hover {
+  background: #d4af37;
+  color: #111;
+}
+
+.remove-btn {
+  padding: 9px 18px;
+  border: none;
+  background: #e74c3c;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #c0392b;
+}
+
+/* Optional old tips section */
+.favorite-tips {
+  max-width: 900px;
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tip-card {
+  background: #f7f1d1;
+  padding: 25px;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.tip-card p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .favorites-grid,
+  .favorite-tips {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .favorites-page {
+    padding: 30px 15px;
+  }
+
+  .favorites-box h1,
+  .favorites-header h1 {
+    font-size: 30px;
+  }
+
+  .favorites-header p {
+    font-size: 16px;
+  }
+
+  .favorites-card,
+  .favorites-empty-card {
+    padding: 30px 20px;
+  }
+
+  .favorites-grid,
+  .favorite-tips {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .favorite-drink-card img {
+    height: 180px;
+  }
+
+  .favorite-info h2 {
+    font-size: 20px;
+  }
+
+  .favorite-info .details-btn,
+  .remove-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
