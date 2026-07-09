@@ -1,16 +1,15 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import PageTransition from "./components/PageTransition.jsx";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import PageTransition from "./components/PageTransition";
-
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import Favorites from "./pages/Favorites";
-import AddRecipe from "./pages/AddRecipe";
-import About from "./pages/About";
-import DrinkDetails from "./pages/DrinkDetails";
+import Home from "./pages/Home.jsx";
+import Menu from "./pages/Menu.jsx";
+import Favorites from "./pages/Favorites.jsx";
+import AddRecipe from "./pages/AddRecipe.jsx";
+import About from "./pages/About.jsx";
+import DrinkDetails from "./pages/DrinkDetails.jsx";
 
 export default function App() {
   return (
