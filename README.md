@@ -1,32 +1,29 @@
 # Coffee Tube Recipe Book
 
+## Live Demo
+
+https://tube-recipe-book-main.vercel.app
+
+## Source Code
+
+https://github.com/meowmeow-hue/Tube-Recipe-Book
+
 ## Project Description
 
-Coffee Tube Recipe Book is a React web application developed to allow users to browse and explore different coffee and beverage recipes. The application provides recipe details, ingredients, preparation instructions, and drink categories. Users can also search for drinks, save favorite recipes, and add new recipes.
+Coffee Tube Recipe Book is a React web application for browsing coffee and drink recipes. Users can view different drinks, read recipe details, search by drink name, filter by category, save favorite drinks, and add new recipes.
 
-## Objectives
-
-The objectives of this project are to:
-
-- Develop a single-page application using React.
-- Implement page navigation using React Router.
-- Display drink recipes with detailed information.
-- Apply reusable React components.
-- Manage application data using React Context.
-- Create a responsive and user-friendly interface.
-
-## Features
+## Main Features
 
 - Home page
 - Menu page
-- Drink details page
+- Drink detail page
 - Favorites page
-- Add Recipe page
+- Add recipe page
 - About page
-- Search functionality
-- Drink categories
-- Recipe descriptions
-- Ingredients and preparation steps
+- Search drinks
+- Filter drinks by category
+- Save favorite drinks using localStorage
+- Responsive design
 
 ## Technologies Used
 
@@ -36,108 +33,83 @@ The objectives of this project are to:
 - JavaScript
 - HTML
 - CSS
+- localStorage
+- Vercel
 
 ## Project Structure
 
 ```text
 src/
-│
 ├── assets/
 ├── components/
 │   ├── Navbar.jsx
 │   ├── Footer.jsx
 │   ├── DrinkCard.jsx
 │   └── SearchBar.jsx
-│
 ├── pages/
 │   ├── Home.jsx
 │   ├── Menu.jsx
-│   ├── DrinkDetails.jsx
+│   ├── DrinkDetail.jsx
 │   ├── Favorites.jsx
 │   ├── AddRecipe.jsx
 │   └── About.jsx
-│
 ├── context/
 │   └── DrinkContext.jsx
-│
 ├── data/
 │   └── drinks.js
-│
 ├── App.jsx
 └── main.jsx
 ```
 
 ## Installation
 
-1. Clone the repository.
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Tube-Recipe-Book.git
+git clone https://github.com/meowmeow-hue/Tube-Recipe-Book.git
 ```
 
-2. Navigate to the project folder.
+Go to the project folder:
 
 ```bash
 cd Tube-Recipe-Book
 ```
 
-3. Install dependencies.
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-4. Start the development server.
+Run the project:
 
 ```bash
 npm run dev
 ```
 
-5. Open the application in your browser.
+Open in browser:
 
-```
+```text
 http://localhost:5173
 ```
 
-## Pages
+## Build
 
-### Home
-Displays an introduction to the application and featured drinks.
+To check if the project builds correctly:
 
-### Menu
-Displays all available drink recipes organized by category.
+```bash
+npm run build
+```
 
-### Drink Details
-Displays the selected drink, including its image, description, ingredients, and preparation instructions.
+## Contributors
 
-### Favorites
-Displays drinks saved by the user.
+- Onimaru Mika
+- Rith Monyleaphea
+- Bun Long Kouch
 
-### Add Recipe
-Allows users to add a new drink recipe.
+## Course Information
 
-### About
-Provides information about the purpose of the project and its development.
-
-## Future Improvements
-
-- User authentication
-- Database integration
-- Image upload support
-- Recipe ratings and reviews
-- Advanced filtering and sorting
-
-## Author
-
-Contributors
-
-This project was developed by:
-
-Onimaru Mika
-Rith Monyleaphea
-Bun Long Kouch
-
-Course: Web development II
+Course: Web Development II
 
 Institution: American University of Phnom Penh
 
@@ -145,4 +117,4 @@ Date: 06 July 2026
 
 ## License
 
-This project was developed for educational purposes only.
+This project is for educational purposes only.
