@@ -24,6 +24,7 @@ Coffee Tube Recipe Book is a React web application for browsing coffee and drink
 - Filter drinks by category
 - Save favorite drinks using localStorage
 - Responsive design
+- Easy to understand UI
 
 ## Technologies Used
 
