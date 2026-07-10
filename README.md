@@ -34,7 +34,7 @@ Coffee Tube Recipe Book is a React web application for browsing coffee and drink
 - JavaScript
 - HTML
 - CSS
-- localStorage
+- localstorage
 - Vercel
 
 ## Project Structure
